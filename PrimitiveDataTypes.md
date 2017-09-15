@@ -1,4 +1,4 @@
-#Primitive Data Types
+# Primitive Data Types
 `float
 int
 double
@@ -8,13 +8,13 @@ long
 short
 byte`
 
-#Declarations
+# Declarations
 `int count;` default = 0
 `double x,j;` default = 0.0
 `String firstName;` default empty
 `String` is a Class Types
 
-#Class Structure
+# Class Structure
 ````
 public class HappyClass{
   //fields or a global variable
@@ -31,4 +31,4 @@ public class HappyClass{
   }
 }
   ````
-##Another Example
+## Another Example

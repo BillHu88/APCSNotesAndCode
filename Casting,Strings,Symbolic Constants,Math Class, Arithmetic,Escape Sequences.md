@@ -1,16 +1,16 @@
-#Casting
+# Casting
 General format:
 
 `(cast type) sometype var;`
-###Example
+### Example
 `(int) double x=5.2;` - now x is 5
 
 This is called truncating, and when a double get truncated, everything after the decimal gets chopped offed. Thus, the variable looses its precision.
-###Another Example
+### Another Example
 a and b are ints, so `a/b` get truncated. In order to keep the decimal:
 
 `int x = (double)a/b;`
-#Strings
+# Strings
 Strings in double quotes ("") are recognized as literal constants or literal Strings.
 That means whatever you write between those two double quotes is exactly what your compiler is going not print out
 
@@ -20,7 +20,7 @@ That means whatever you write between those two double quotes is exactly what yo
 
 
 `"Catch"+22;` - "Catch 22"
-#Escape Sequences
+# Escape Sequences
 
 `\n` - newline
 `\r` - carriage return
@@ -37,7 +37,7 @@ I like tacos.
 I do too.
 ```
 
-#Symbolic Constants
+# Symbolic Constants
 Initialized *final* variables
 
 example: `private final int sidelength=8;`
@@ -46,14 +46,14 @@ easy to change the value throughout the program, if necessary
 
 `private final double TAX_RATE;` if you every see a variable in all caps with underscores it is likely a constant
 
-#Arithmetic
-###Binary Operators
+# Arithmetic
+### Binary Operators
 Operators: `+,-,/,/*,%`
 Order that they are carried out is the same as PEMDAS. In this case, modulus is has the same rank in PEMDAS as multiplication or division
-###Unary Operators
+### Unary Operators
 Operators: `-,!,++,--`
 Have higher precedence than binary operators which means they are executed first. Example: `side=-side;`
-###Compound Operators
+### Compound Operators
 `a=a+b;` <-> `a+=b;`
 
 `a=a-b;` <-> `a-=b;`
@@ -63,7 +63,7 @@ Have higher precedence than binary operators which means they are executed first
 `a=a/b;` <-> `a/=b;`
 
 `a=a%b;` <-> `a%=b;`
-#The Math Class
+# The Math Class
 `Math.abs(x)`- |x|
 
 `Math.round(x)` - round to nearest int
