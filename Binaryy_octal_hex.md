@@ -3,17 +3,17 @@ HOMEWORK - BINARY, OCTAL, HEXADECIMAL WORKSHEET
 # Decimal-
 regular numbers
 
-Binary-
+# Binary-
 3|2|1|0|
 1 0 1 0
 (2^3*1)+(2^2*0)+(2^1*1)+(2^0*1)
 
-Octal-
+# Octal-
 2|1|0|
 1 0 0
 (8^2*1)+(8^1*0)+(8^0*0)
 
-Hexadecimal-
+# Hexadecimal-
 0 to F(15)
 2|1|0|
 2 D 7
