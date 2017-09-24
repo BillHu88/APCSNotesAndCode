@@ -1,5 +1,8 @@
 // Chapter 5 Question 27
 
+//Pratham Gandhi
+
+
 // ________________________________________________
 
 import java.awt.Color;
@@ -12,6 +15,7 @@ public class Rainbow extends JPanel
 {
   // Declare skyColor:
   // ________________________________________________
+
 
   public Rainbow()
   {
