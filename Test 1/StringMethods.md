@@ -2,7 +2,7 @@
 ## Basics
 - `length()` -> returns num of char in String
 	- `"Flower".length();` -> 6
-- `1charAt()` -> returns the kth char
+- `charAt()` -> returns the kth char
 	- character position in the string starts at 0
 	- `"Wind".charAt(2);` -> 'n'
 
