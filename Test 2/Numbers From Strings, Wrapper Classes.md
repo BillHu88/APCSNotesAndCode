@@ -61,7 +61,6 @@ char ch = Character.forDigit(d,radix); //Not tested on the AP Exam
 	- `delete`
 - `toString` method converts StringBuffer into a String
 
-##Recap/Review
+## Recap/Review
 - `"length".length();` - works only because length has the "" around it, which makes it a literal string
 - `String city = "San Francisco";` value of `city.charAt(13)` - out of bounds, value of `city.substring(3,9);` - "_Franc"
-
