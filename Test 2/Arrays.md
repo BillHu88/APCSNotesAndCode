@@ -41,3 +41,22 @@ private double [] gasPrices = {3.05,3.17,3.59};
 String[] words = new String[1000];
 String[] cities = {"Atlanta", "Boston", "Cincinnati"};
 ```
+
+## Array's length
+- The Length of the Array is determined when that array is created
+- The length is either given explicitly or comes from the length of the `{...}` initialization list
+- the length of an array `arrName` is referred to in the code as `arrName.length`
+- length is like a public field (*not* a method) in an array object
+
+## Initializing Elements
+- Unless specific values are given in a `{...}` list, all the elements are initialized to the default value: `0` for numbers, `false` for Booleans, `null` for objects
+
+ex.
+```
+Color[] pens; //array not created yet
+...
+pens = new Color [3]; //array made all three elements=null
+pens[0] = Color.BLUE;
+pens[1] = new Color (15,255,255);
+pens[2] = Color.CYAN;
+```
