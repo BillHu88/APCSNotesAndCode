@@ -1,0 +1,27 @@
+private double match(int[][] image, int[][] template, int row, int col){
+		int n = (template.length)*(template[0].length);
+		double avgImage = 0.0, avgTempl = 0.0;
+		for(int r = 0; r<=template.length; r++){
+			for(int c = 0; c<=template[0].length; c++){
+				avgImage+=image[r+row][c+col];
+				avgTempl+=template[r][c];
+			}
+		}
+		avgImage/=n;
+		avgTempl/=n;
+		double sigmaImage=0.0, sigmaTempl=0.0, cov = 0.0;
+		for(int ro = 0; ro<template.length; ro++){
+			for(int co = 0; co<template[0].length; co++){
+				double d1 = image[ro+row][co+col]-avgImage;
+				double d2 = template[ro][co]-avgTempl;
+				sigmaImage+=d1*d1;
+				sigmaTempl+=d2*d2;
+				cov += d1*d2;
+			}
+		}
+		sigmaImage = Math.sqrt(sigmaImage/n);
+		sigmaTempl = Math.sqrt(sigmaTempl/n);
+		cov /= n;
+		double corr = cov/(sigmaImage*sigmaTempl);
+		return corr;
+	}
