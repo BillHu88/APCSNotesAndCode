@@ -21,6 +21,13 @@ public class LineList{
     public void move(int index, int newIndex){
         String temp = entry.remove(index);
         entry.add(newIndex, temp);
-        
+    }
+    public void shuffle(){
+        int n = entry.size()-1; 
+        while(n>=2){
+            int randVal = (int)(Math.random() * n);
+            move(randVal, n);
+            n--;
+        }  
     }
 }
